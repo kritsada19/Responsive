@@ -7,43 +7,152 @@
   <title>Tailwind CSS Link Setup</title>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 
-<body class="bg-slate-100">
+<body class="bg-slate-100 min-h-screen">
 
-  <nav class="flex justify-between items-center bg-gray-500 text-white p-2 px-4">
-    <div class="flex items-center space-x-3">
+  <nav class="flex justify-between items-center bg-gray-500 text-white p-2 px-4 md:px-6 md:py-3 lg:px-10 lg:py-4">
+    <div class="flex items-center space-x-3 md:space-x-4 lg:hidden">
       <button class="focus:outline-none" aria-label="Toggle Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        <svg class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
 
-    <div class="flex items-center space-x-2">
-      <img class="w-8 h-auto"
+    <div class="hidden lg:block">
+      <ul class="flex space-x-4 md:space-x-6 lg:space-x-8">
+        <li><a href="#" class="hover:text-gray-300 bg-gray-600 p-2">เมนูหลัก</a></li>
+        <li><a href="#" class="hover:text-gray-300 font-bold">เข้าสู่ระบบ (SSO)</a></li>
+        <li><a href="#" class="hover:text-gray-300">วิชาที่เปิดสอน</a></li>
+        <li><a href="#" class="hover:text-gray-300">ตารางเวลา</a></li>
+        <li><a href="#" class="hover:text-gray-300">ปฏิทินการศึกษา</a></li>
+        <li><a href="#" class="hover:text-gray-300">ตอบคำถาม</a></li>
+        <li><a href="#" class="hover:text-gray-300">แนะนำการลงทะเบียน</a></li>
+        <li><a href="#" class="hover:text-gray-300">วิธีการพิมพ์ใบเสร็จ</a></li>
+        <li><a href="#" class="hover:text-gray-300">เว็ปไซต์สำนักบริหารฯ</a></li>
+      </ul>
+    </div>
+
+    <div class="flex items-center space-x-2 md:space-x-3 lg:space-x-4">
+      <img class="w-8 h-auto md:w-10 lg:w-12"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX////eEBgAJH3dAADuoqMACXcACHfmFzQuAAABGklEQVR4nO3csRGDQBAEwUPw5B+yXNVPyQajO4KtCWDnYDdPD3ghTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qTmZDcXuwEAAAAAAAAA+Gfdi1/3mg87TUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPyV7C719MXEgAAAAAAAADAi13s5mQ3BztNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDSpLyoz1t0hk9WgAAAAAElFTkSuQmCC"
         alt="ภาษาไทย">
-      <p class="text-xs">
+      <p class="text-xs md:text-sm">
         ภาษาไทย
       </p>
-      <p>
+      <p class="text-sm md:text-base">
         &#9660;
       </p>
     </div>
   </nav>
 
-  <main>
-    <section>
-      <div class="bg-gray-400">
-        <p class="text-white text-xl px-2">
+<main class="max-w-5xl mx-auto px-4 py-4 md:px-6 md:py-6 lg:max-w-6xl lg:px-8 lg:py-8 lg:space-y-6">
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md lg:shadow-lg">
+      <div class="bg-gray-400 px-3 py-2 md:px-4 md:py-3 lg:px-5 lg:py-4">
+        <h1 class="text-white text-xl md:text-2xl lg:text-3xl">
           ประการเรื่อง
-        </p>
+        </h1>
+      </div>
+
+      <div class="p-2 md:p-4 lg:p-5">
+        <h2 class="text-[11px] md:text-sm lg:text-base text-black underline p-2 md:p-3 lg:p-4">
+          1. กำหนดการสอบกลางภาค ภาคเรียนที่ 1 ปีการศึกษา 2569<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/picture/regWebImage/4669_25690724165319.jpg"
+          alt="กำหนดการสอบกลางภาค">
+        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย <b>บุษกร ชัยวงค์</b> วันที่ประกาศ 24 กรกฏาคม 2569</p>
       </div>
     </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md lg:shadow-lg">
+      <div class="p-2 md:p-4 lg:p-5">
+        <h2 class="text-[11px] md:text-sm lg:text-base text-black underline p-2 md:p-3 lg:p-4">
+          2. การชำระเงิน<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzI3MDY1&method=inline"
+          alt="การชำระเงิน">
+        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย - วันที่ประกาศ 14 กรกฏาคม 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          3. ห้องเรียนอยู่ไหน ?<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NjQ1MDIz&method=inline"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย - วันที่ประกาศ 1 กรกฏาคม 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          4. การเข้าใช้เว็บ<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzUyMTgx&method=inline"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย - วันที่ประกาศ 1 กรกฏาคม 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          5. ถอนรายวิชาโดยได้รับอักษร W<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/picture/regWebImage/4088_25690703084217.jpg"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย - วันที่ประกาศ 30 มิถุนายน 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          6. กำหนดการปฏิทินการศึกษา ภาคการศึกษาที่ 1 ปีการศึกษา 2569<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <h4 class="text-[10px] md:text-xs text-black px-2 md:px-4 leading-relaxed">
+          กำหนดการปฏิทินการศึกษา ภาคการศึกษาที่ 1 ปีการศึกษา 2569 *** นักศึกษาสามารถดูรายละเอียดปฏิทินการศึกษาเพิ่ม
+          <br>ได้ที่ https://edu.mju.ac.th/fileDownload/891.pdf?v=8:54:53
+        </h4>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzkyNDI0&method=inline"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>จักรกฤษณ์ ธงแดง</b> วันที่ประกาศ 1 กรกฏาคม 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          7. การพ้นสภาพ<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NjkyMjYx&method=inline"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย - วันที่ประกาศ 30 กรกฏาคม 2569</p>
+      </div>
+    </section>
+
+    <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md">
+      <div class="p-2 md:p-4">
+        <h2 class="text-[11px] md:text-sm text-black underline p-2 md:p-3">
+          8. ประชาสัมพันธ์การขอเอกสารทางการศึกษาผ่านระบบออนไลน์<span class="text-[#FF0000]">(ด่วนที่สุด)</span>
+        </h2>
+        <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzU5OTg1&method=inline"
+          alt="ห้องเรียนอยู่ไหน ?">
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>วราภัสร์ สุวรรณ</b> วันที่ประกาศ 19 ธันวาคม 2568</p>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="text-white p-2 px-4 md:px-6 md:p-3 lg:px-8 lg:py-4">
+    <img class="mx-auto h-10 md:h-12 lg:h-14" src="https://reg.mju.ac.th/registrar/images/common/button/go_top_1.gif"
+      alt="">
+  </footer>
 
 </body>
 
