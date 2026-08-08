@@ -9,13 +9,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-slate-100 min-h-screen">
+<body id="top" class="bg-slate-100 min-h-screen flex flex-col">
 
   <nav class="flex justify-between items-center bg-gray-500 text-white p-2 px-4 md:px-6 md:py-3 lg:px-10 lg:py-4">
     <div class="flex items-center space-x-3 md:space-x-4 lg:hidden">
       <button class="focus:outline-none" aria-label="Toggle Menu">
-        <svg class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
@@ -23,7 +23,7 @@
 
     <div class="hidden lg:block">
       <ul class="flex space-x-4 md:space-x-6 lg:space-x-8">
-        <li><a href="#" class="hover:text-gray-300 bg-gray-600 p-2">เมนูหลัก</a></li>
+        <li><a href="#" class="hover:text-gray-300 bg-gray-600 p-2 rounded-lg">เมนูหลัก</a></li>
         <li><a href="#" class="hover:text-gray-300 font-bold">เข้าสู่ระบบ (SSO)</a></li>
         <li><a href="#" class="hover:text-gray-300">วิชาที่เปิดสอน</a></li>
         <li><a href="#" class="hover:text-gray-300">ตารางเวลา</a></li>
@@ -48,7 +48,7 @@
     </div>
   </nav>
 
-<main class="max-w-5xl mx-auto px-4 py-4 md:px-6 md:py-6 lg:max-w-6xl lg:px-8 lg:py-8 lg:space-y-6">
+  <main class="flex-1 max-w-5xl mx-auto px-4 py-4 md:px-6 md:py-6 lg:max-w-6xl lg:px-8 lg:py-8 lg:space-y-6">
     <section class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm md:shadow-md lg:shadow-lg">
       <div class="bg-gray-400 px-3 py-2 md:px-4 md:py-3 lg:px-5 lg:py-4">
         <h1 class="text-white text-xl md:text-2xl lg:text-3xl">
@@ -62,7 +62,8 @@
         </h2>
         <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/picture/regWebImage/4669_25690724165319.jpg"
           alt="กำหนดการสอบกลางภาค">
-        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย <b>บุษกร ชัยวงค์</b> วันที่ประกาศ 24 กรกฏาคม 2569</p>
+        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย <b>บุษกร ชัยวงค์</b>
+          วันที่ประกาศ 24 กรกฏาคม 2569</p>
       </div>
     </section>
 
@@ -73,7 +74,8 @@
         </h2>
         <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzI3MDY1&method=inline"
           alt="การชำระเงิน">
-        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย - วันที่ประกาศ 14 กรกฏาคม 2569</p>
+        <p class="text-[10px] md:text-xs lg:text-sm bg-gray-200 p-2 md:p-3 lg:p-4 mt-2">ประกาศโดย - วันที่ประกาศ 14
+          กรกฏาคม 2569</p>
       </div>
     </section>
 
@@ -121,7 +123,8 @@
         </h4>
         <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzkyNDI0&method=inline"
           alt="ห้องเรียนอยู่ไหน ?">
-        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>จักรกฤษณ์ ธงแดง</b> วันที่ประกาศ 1 กรกฏาคม 2569</p>
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>จักรกฤษณ์ ธงแดง</b> วันที่ประกาศ 1
+          กรกฏาคม 2569</p>
       </div>
     </section>
 
@@ -143,17 +146,38 @@
         </h2>
         <img class="w-full h-auto object-cover" src="https://erp.mju.ac.th/openFile.aspx?id=NzU5OTg1&method=inline"
           alt="ห้องเรียนอยู่ไหน ?">
-        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>วราภัสร์ สุวรรณ</b> วันที่ประกาศ 19 ธันวาคม 2568</p>
+        <p class="text-[10px] md:text-xs bg-gray-200 p-2 md:p-3 mt-2">ประกาศโดย <b>วราภัสร์ สุวรรณ</b> วันที่ประกาศ 19
+          ธันวาคม 2568</p>
       </div>
     </section>
 
   </main>
 
-  <footer class="text-white p-2 px-4 md:px-6 md:p-3 lg:px-8 lg:py-4">
-    <img class="mx-auto h-10 md:h-12 lg:h-14" src="https://reg.mju.ac.th/registrar/images/common/button/go_top_1.gif"
-      alt="">
-  </footer>
+  <footer class="bg-gray-500
+               px-3
+               py-2.5
+               sm:px-4
+               md:px-6
+               md:py-3
+               lg:px-8
+               lg:py-4">
 
+    <div class="w-full
+                   max-w-xl
+                   md:max-w-2xl
+                   lg:max-w-4xl
+                   xl:max-w-5xl
+                   mx-auto
+                   flex
+                   items-center">
+
+      <p class="text-xs sm:text-sm md:text-base text-white">
+        © MJU
+      </p>
+
+    </div>
+
+  </footer>
 </body>
 
 </html>
